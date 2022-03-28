@@ -282,7 +282,7 @@ def find_pose():
 
         rospy.sleep(0.1)
         rgbo = rospy.wait_for_message('/camera/color/image_raw', Image)
-        print "depth"
+        print("depth")
         deptho = rospy.wait_for_message('/camera/depth/image_raw', Image)
     #    rgbo = rospy.wait_for_message('/camera/rgb/image_color', Image)
         depthfin = bridge.imgmsg_to_cv2(deptho)
